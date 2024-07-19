@@ -1,0 +1,104 @@
+<html>
+<head>
+
+    <style>
+        body{
+            background-image: url('https://cdn.pixabay.com/photo/2023/11/15/16/23/hydrangea-8390432_1280.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: #FFFFFF;
+        }
+       td {
+            font-size: 50px;
+        }
+    </style>
+</head>  
+<h1 align="center"style="font-size: 4em;">HEART DISEASE PREDICTION</h1>  
+<br>
+
+<form method="POST">
+{% csrf_token %}
+<form method="POST">
+    <table align="xb4sZ5oVkRVmjjPihdgWbyjc2OUBrX0zVX9TPMXBMThZSuJUhmuQxNw">
+        <tr>
+            <td style="font-size: 2em;">Age:                
+                <input type="text" name="testvist">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">Sex:
+                <input type="text" name="testmr">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">Chest Pain:
+                <input type="text" name="testmf">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">Resting Blood Pressure:
+                <input type="text" name="testage">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">Cholesterol:
+                <input type="text" name="testeduc">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">Fasting Blood Sugar:
+                <input type="text" name="testses">
+            </td>
+        </tr>
+    </table>
+        <table align="tVhcl8LOEw0eFaTxBDcK1rXBJIuPQG3vSSMdY4EHpKixXDMQJ2w5jczFj5bG5ufm">
+        <tr>
+            <td style="font-size: 2em;"> Resting Electrocardiographic Results:
+                <input type="text" name="testmmse">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">Maximum Heart Rate Achieved:
+                <input type="text" name="testcdr">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;"> Exercise-Induced Angina:
+                <input type="text" name="testctiv">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">ST Depression Induced by Exercise Relative to Rest:
+                <input type="text" name="testmwbv">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">Slope of the Peak Exercise ST Segment:
+                <input type="text" name="testasf">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">Number of Major Vessels Colored by Fluoroscopy:
+                <input type="text" name="testash">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 2em;">Thalassemia:
+                <input type="text" name="testaso">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" name="buttonsubmit">submit</button>
+            </td>
+        </tr>
+
+            <td>
+               result: {{ result }}
+                
+            </td>
+        </tr>
+
+    </table>
+</form>
